@@ -2,7 +2,7 @@ var http = require("https");
 var cheerio=require("cheerio");
 var fs = require('fs');
 
-var smtpUser="yunteng.ma@houpix.com";
+var smtpUser="xx@xx.com";
 var smtpPwd="**********";
 var smtpServer="smtp.qiye.163.com";
 
@@ -64,9 +64,9 @@ function sendEmail(toEmail,toName){
   }
   var message = {
      text:    text.replace("${name}",toName), 
-     from:    "马云腾 <"+smtpUser+">", 
+     from:    "xx <"+smtpUser+">", 
      to:      toName+" <"+toEmail+">",
-     subject: "来自马云腾的邀请函",
+     subject: "xx",
   };
 
   server.send(message, function(err, message) { 
